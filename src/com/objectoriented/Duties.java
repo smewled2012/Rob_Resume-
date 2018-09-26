@@ -48,5 +48,4 @@ public class Duties {
         this.myduty = myduty;
     }*/
 
-    public void addDuties
 }
