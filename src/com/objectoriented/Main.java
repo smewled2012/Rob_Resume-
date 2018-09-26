@@ -7,12 +7,14 @@ public class Main {
 
     public static void main(String[] args) {
         // write your code here
-        //***********************************************************************************************
+
 
        // steps to be followed
         Scanner input = new Scanner(System.in);
 
         // define and instanitiate an object of PersonalInfo
+
+        // *************************personal Information ******************************************************************************************************
 
         Personallnfo person = new Personallnfo();
         System.out.print("Please Enter Your Full name :");
@@ -24,7 +26,8 @@ public class Main {
         person.setEmail(email);
         input.nextLine();
 
-    // ****** entering the educational Background of the above profile
+    // ****** entering the educational Background of the above profile******************************************************************
+/*
 
         EducationalBack education1 = new EducationalBack();
 
@@ -62,6 +65,7 @@ public class Main {
         ArrayList<EducationalBack> perEducation= person.getEduBackground();
 
         System.out.printf("\nThe number of the Education will be : %s \n\n",perEducation.size());
+*/
 
           /*  System.out.println(person.getName());
             System.out.println(person.getEmail());
@@ -74,9 +78,15 @@ public class Main {
 
            }*/
 
+
         // Entering the experience of the person
+      //****************************************Experience of a person *************************************************************************************************************************************
 
         Exprience exprience1 = new Exprience();
+        Duties dutyfirst = new Duties("");
+       // ArrayList<Duties> firstDuty = new ArrayList<Duties>();
+
+       // ArrayList<String> dutyy = new ArrayList<String>();
         ArrayList<String> duties =new ArrayList<String>();
         boolean check3 = true;
 
@@ -90,10 +100,14 @@ public class Main {
 
         System.out.println("Please Enter your duties in the company ");
         String duty = input.nextLine();
-        duties.add(duty);
+
+        //adding duties here
+
+
 
         while(check3) {
             System.out.println("Please Enter your other duties in the company ");
+
             duty =input.nextLine();
             if (!duty.isEmpty()) {
                 duties.add(duty);
@@ -102,10 +116,21 @@ public class Main {
                 check3=false;
             }
         }
+       // ArrayList<String> dutyy = new ArrayList<String>();
+
+       // ArrayList<> dutys = new ArrayList<ArrayList<String>>();
+        //exprience1.addDuties(dutys);
+
+        exprience1.addDuties(duties);
+
+        //exprience1.addDuties(duties);
+
         exprience1.setPosition(position);
         exprience1.setCompany(company);
         exprience1.setDuration(duration);
-        exprience1.setDuty(duties);
+      //  exprience1.setDuty(dutyfirst);
+        exprience1.
+
 
         person.addExprience(exprience1);
 

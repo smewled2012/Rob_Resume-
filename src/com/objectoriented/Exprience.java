@@ -7,22 +7,31 @@ public class Exprience {
     private String position;
     private String company;
     private String duration;
-    private ArrayList<String> duty;
+   ArrayList<Duties> duty;
+  //  ArrayList<String> duty;
+   // private ArrayList<String> duty;
+  //  private ArrayList<ArrayList> dutys;
 
     public Exprience() {
         this.position = position;
         this.duration = duration;
-        duty = new ArrayList<String>();
+     //    duty = new ArrayList<String>();
+        duty = new ArrayList<Duties>();
     }
 
-    public void setDuty(ArrayList<String> duty) {
+   /* public void setDuty(ArrayList<String> duty){
+        this.duty=duty;
+
+    }
+  */
+    public void setDuty(ArrayList<Duties> duty) {
         this.duty = duty;
     }
 
-    public Exprience(String position, String duration, ArrayList<String> duty) {
+    public Exprience(String position, String duration, ArrayList<Duties> duty) {
         this.position = position;
         this.duration = duration;
-        duty = new ArrayList<String>();
+        duty = new ArrayList<Duties>();
     }
 
     public String getCompany() {
@@ -49,7 +58,13 @@ public class Exprience {
         this.duration = duration;
     }
 
-    public ArrayList<String> getDuty() {
+    public ArrayList<Duties> getDuty() {
         return duty;
     }
+    public void addDuties(Duties firstDuty){
+        this.duty.add(firstDuty);
+
+    }
+
+
 }
