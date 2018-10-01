@@ -7,39 +7,18 @@ public class Exprience {
     private String position;
     private String company;
     private String duration;
-   ArrayList<Duties> duty;
-  //  ArrayList<String> duty;
-   // private ArrayList<String> duty;
-  //  private ArrayList<ArrayList> dutys;
+   ArrayList<Duties> myDuties;
 
     public Exprience() {
         this.position = position;
         this.duration = duration;
-     //    duty = new ArrayList<String>();
-        duty = new ArrayList<Duties>();
-    }
-
-   /* public void setDuty(ArrayList<String> duty){
-        this.duty=duty;
-
-    }
-  */
-    public void setDuty(ArrayList<Duties> duty) {
-        this.duty = duty;
+        myDuties = new ArrayList<Duties>();
     }
 
     public Exprience(String position, String duration, ArrayList<Duties> duty) {
         this.position = position;
         this.duration = duration;
-        duty = new ArrayList<Duties>();
-    }
-
-    public String getCompany() {
-        return company;
-    }
-
-    public void setCompany(String company) {
-        this.company = company;
+      //  duty = new ArrayList<Duties>();
     }
 
     public String getPosition() {
@@ -50,6 +29,14 @@ public class Exprience {
         this.position = position;
     }
 
+    public String getCompany() {
+        return company;
+    }
+
+    public void setCompany(String company) {
+        this.company = company;
+    }
+
     public String getDuration() {
         return duration;
     }
@@ -58,11 +45,16 @@ public class Exprience {
         this.duration = duration;
     }
 
-    public ArrayList<Duties> getDuty() {
-        return duty;
+    public ArrayList<Duties> getMyDuties() {
+        return myDuties;
     }
+
+    public void setMyDuties(ArrayList<Duties> myDuties) {
+        this.myDuties = myDuties;
+    }
+
     public void addDuties(Duties firstDuty){
-        this.duty.add(firstDuty);
+        this.myDuties.add(firstDuty);
 
     }
 

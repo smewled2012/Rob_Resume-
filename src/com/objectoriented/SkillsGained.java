@@ -1,10 +1,15 @@
 package com.objectoriented;
 
 public class SkillsGained {
-    String skill;
+    private String skill;
+    private String level;
 
-    public SkillsGained(String skill) {
-        this.skill = skill;
+    public String getLevel() {
+        return level;
+    }
+
+    public void setLevel(String level) {
+        this.level = level;
     }
 
     public String getSkill() {
